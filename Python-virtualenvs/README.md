@@ -155,6 +155,15 @@ home/cris19/Studying/Python3/studying_python/Python-virtualenvs/python-virtual-e
 
 En el ejemplo anterior, nuestro ambiente virtual "bin" esta ahora al inicio del **path**(ruta). Esto quiere decir que este sera el primer directorio que sera buscado cuando se corra un ejecutable en la terminal. Por lo tanto, el **Shell** utiliza la instancia de **python** de nuestra entorno virtual en lugar de la version de todo el sistema.
 
+Esto deja algunas preguntas:
+- Cual seria entonces la diferencia entre estos dos ejecutables?
+- Como es capaz el ejecutable de python del entorno virtual de usar algo que no sea el **system site-packages**?
+
+Esto puede ser explicado por como python arranca y donde esta ubicado en el sistema. Actualmente no hay ninguna diferencia entre esos dos ejecutables. *Son sus ubicacion de directorios lo que importa*.
+
+Cuando Python es puesto en marcha, este "mira" en el **path** por un **binario**(el cual, en el ambiente virtual es actualmente una copia, o un symlink de, el binario del sistema de python). Acontinuacion, establece la ubicacion del **sys.prefix** y **sys.exec_prefix**  basados en esta ubicacion, omitiendo la parte "**bin**" del **path**.
+
+El **path** ubicado en **sys.prefix**
 
 
 
