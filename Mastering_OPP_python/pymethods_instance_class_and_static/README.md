@@ -270,3 +270,8 @@ Nosotros no tenemos que preocuparnos acerca de configurar una instancia de clase
 - Metodos de clase no necesitan una clase instanciada. Estos no pueden acceder a la instancia (self) pero tienen acceso a la clase como tal via **cls**.
 - Metodos estaticos no tienen acceso a la clase **cls** o **self**. Estos trabajan como expresiones regulares pero extendiendo el namespace de la clase.
 - Metodos estaticos y de clase comunican y (hasta cierto grado) impoenen la intencion del desarrollador sobre el diseño de clase. Esto puede tener beneficios en el mantenimiento.
+
+
+## Referencia
+
+- Este repo esta basado en la pagina REAL PYTHON [instance class and static methods](https://realpython.com/instance-class-and-static-methods-demystified/)
