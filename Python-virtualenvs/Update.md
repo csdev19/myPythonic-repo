@@ -9,4 +9,4 @@ Voy a crear un nuevo repo acerca de una version mas reciente de manejo de ambien
 ## Para instalar de manera correcta el virtualenv wrapper o fixear errores
 
 - [en el siguiente link esta la mejor respuesta](https://medium.com/@gitudaniel/installing-virtualenvwrapper-for-python3-ad3dfea7c717)
-
+- [y la documentacion](https://virtualenvwrapper.readthedocs.io/en/latest/install.html)
